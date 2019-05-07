@@ -1,10 +1,10 @@
-# Let's Get Started
+#Build and Deploy a dockerized Maven SpringBoot application to GKE using Jenkins Multibranch Pipelines
+
+![](assets/img/tech_stack.png)
 
 ---
 
 ## Add Some Slide Candy
-
-![](assets/img/presentation.png)
 
 ---
 @title[Customize Slide Layout]
