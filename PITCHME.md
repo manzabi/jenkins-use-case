@@ -42,7 +42,7 @@
 @snapend
 
 ---
-@title[Flow]
+@title[Go With The Flow]
 
 @snap[north-west]
 ### Go With The Flow
@@ -53,8 +53,9 @@
 @snapend
 
 ---
-@color[black](Code Presenting
-Slide Templates)
+@title[The Jenkinsfile]
+
+@color[black](Code Presenting Slide Templates)
 @fa[arrow-down text-black]
 
 @snap[south docslink span-50] The Template Docs @snapend
