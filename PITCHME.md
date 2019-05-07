@@ -1,38 +1,23 @@
-## Build and Deploy a dockerized Maven SpringBoot application to GKE using Multibranch Pipelines
-
+## Deploy a SpringBoot app to Kubernetes using Jenkins
 ---
-
-![](assets/img/tech_stack.png)
-
----
-@title[Customize Slide Layout]
-
-@snap[west span-50]
-## Customize Slide Content Layout
-@snapend
-
-@snap[east span-50]
-![](assets/img/presentation.png)
-@snapend
-
----?color=#E58537
-@title[Add A Little Imagination]
+@title[Tech Stack Description]
 
 @snap[north-west]
-#### Add a splash of @color[cyan](**color**) and you are ready to start presenting...
+#### The Usual Suspects
 @snapend
 
 @snap[west span-55]
 @ul[spaced text-white]
-- You will be amazed
-- What you can achieve
-- *With a little imagination...*
-- And **GitPitch Markdown**
+- Jenkins automation server
+- GitLab code repository
+- Maven build system
+- Springboot framework
+- Slack integration
 @ulend
 @snapend
 
 @snap[east span-45]
-@img[shadow](assets/img/conference.png)
+@img[shadow](assets/img/tech_stack.png)
 @snapend
 
 ---?image=assets/img/presenter.jpg
