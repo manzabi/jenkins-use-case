@@ -1,10 +1,6 @@
-##Build and Deploy a dockerized Maven SpringBoot application to GKE using Jenkins Multibranch Pipelines
+## Build and Deploy a dockerized Maven SpringBoot application to GKE using Multibranch Pipelines
 
 ![](assets/img/tech_stack.png)
-
----
-
-## Add Some Slide Candy
 
 ---
 @title[Customize Slide Layout]
