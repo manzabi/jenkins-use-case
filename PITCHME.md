@@ -7,7 +7,7 @@
 @snapend
 
 @snap[west span-55]
-@ul[spaced text-white]
+@ul[spaced text-black]
 - Jenkins automation server
 - GitLab code repository
 - Maven build system
