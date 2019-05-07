@@ -1,0 +1,19 @@
+FROM openjdk:8-jdk-alpine
+
+MAINTAINER biagio@fluttr.in
+
+ARG SPRING_PROFILE
+ARG BIZAROUND_ENV
+
+ENV SPRING_PROFILES_ACTIVE=${SPRING_PROFILE}
+ENV BIZAROUND_ENVIRONMENT=${BIZAROUND_ENV}
+
+# Add the service itself
+ARG JAR_FILE
+ADD target/${JAR_FILE} /opt/fltr/${JAR_FILE}
+
+ENV SERVICE_NAME ${JAR_FILE}
+
+ENTRYPOINT java -Djava.security.egd=file:/dev/./urandom -jar /opt/fltr/$SERVICE_NAME
+
+EXPOSE 8099
