@@ -1,9 +1,9 @@
-## Deploy a SpringBoot app to Kubernetes using Jenkins
+## Deploy a SpringBoot app to GKE using Jenkins
 ---
 @title[Tech Stack Description]
 
 @snap[north-west]
-#### The Usual Suspects
+### The Usual Suspects
 @snapend
 
 @snap[west span-55]
@@ -12,7 +12,8 @@
 - GitLab code repository
 - Maven build system
 - Springboot framework
-- Slack integration
+- Docker
+- Google Kubernetes Engine
 @ulend
 @snapend
 
@@ -20,12 +21,21 @@
 @img[shadow](assets/img/tech_stack.png)
 @snapend
 
----?image=assets/img/presenter.jpg
+---
+@title[Into the Jenkins]
 
-@snap[north span-100 headline]
-## Now It's Your Turn
+@snap[north-west]
+#### The Butler
 @snapend
 
-@snap[south span-100 text-06]
-[Click here to jump straight into the interactive feature guides in the GitPitch Docs @fa[external-link]](https://gitpitch.com/docs/getting-started/tutorial/)
+@snap[west span-55]
+@ul[spaced]
+- Login with GMail SSO
+- Slack integration
+- Custom Groovy Library
+@ulend
+@snapend
+
+@snap[east span-45]
+@img[shadow](assets/img/jenkinstein.png)
 @snapend
