@@ -58,12 +58,6 @@
 @color[black](Code Presenting Slide Templates)
 @fa[arrow-down text-black]
 
-@snap[south docslink span-50] The Template Docs @snapend
-
-+++?code=assets/src/Jenkinsfile @title[The Jenkinsfile]
-
-@[1,3-6](Present code found within any repository source file.) @[8-18](Without ever leaving your slideshow.) @[19-28](Using GitPitch code-presenting with (optional) annotations.)
-
 @snap[north-east template-note text-gray] Code presenting repository source file template. @snapend
 
 +++?color=lavender @title[Fenced Code Block]
