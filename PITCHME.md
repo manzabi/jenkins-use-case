@@ -119,11 +119,11 @@ stage('Build artifact and Docker Image') {
 
 +++?image=assets/img/geek.gif
 
-@snap[north span-55]
+@snap[north text-white span-55]
 @quote[It's what I do that defines me.](Bruce Wayne) 
 @snapend
 
-@snap[west span-45]
+@snap[center]
 @img[shadow](assets/img/jenkins_pipeline_ui.png)
 @snapend
 
