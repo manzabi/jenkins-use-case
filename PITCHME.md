@@ -51,8 +51,8 @@
 @snap[east span-45]
 @ul[spaced]
 - Push Code
-- SCM Checkout & Build
-- Push Docker Image
+- SCM Checkout & Maven Build
+- Build & Push Docker Image
 - Apply image to K8S object
 @ulend
 @snapend
