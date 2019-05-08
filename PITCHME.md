@@ -115,7 +115,7 @@ stage('Build artifact and Docker Image') {
 @[24-40](Mavenick)
 
 ---
-@title[Burn After Reading]
+@title[I'm Batman]
 
 +++?image=assets/img/geek.gif
 
@@ -123,9 +123,10 @@ stage('Build artifact and Docker Image') {
 @quote[It's what I do that defines me.](Bruce Wayne) 
 @snapend
 
+---
+@title[Burn After Reading]
+
 @snap[center span-55]
-@ul[spaced]
 @img[shadow](assets/img/jenkins_pipeline_ui.png)
-@ulend
 @snapend
 
