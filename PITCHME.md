@@ -68,6 +68,7 @@
 
 +++?color=lavender @title[Fenced Code Block]
 
+```javascript
 // import
 @Library("fltrJenkinsLib")
 import com.fluttr.fltrJenkinsGlobalLib
@@ -78,4 +79,8 @@ import groovy.transform.Field
     gkeClusterCredentials: 'gcloud container clusters get-credentials fltr-stg-kube --zone europe-west4-a --project stg-env-228711',
     deploymentName: 'controlroom'
 ]
-@[1,2](You can present code inlined within your slide markdown too.) @[3-5](Your code is displayed using code-syntax highlighting just like your IDE.) @[6-7](Again, all of this without ever leaving your slideshow.)
+```
+
+@[1,2](You can present code inlined within your slide markdown too.) 
+@[3-5](Your code is displayed using code-syntax highlighting just like your IDE.) 
+@[6-7](Again, all of this without ever leaving your slideshow.)
