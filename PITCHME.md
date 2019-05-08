@@ -126,7 +126,7 @@ stage('Build artifact and Docker Image') {
 ---
 @title[Burn After Reading]
 
-@snap[center span-55]
+@snap[center]
 @img[shadow](assets/img/jenkins_pipeline_ui.png)
 @snapend
 
