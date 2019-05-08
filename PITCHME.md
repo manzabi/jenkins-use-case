@@ -113,3 +113,16 @@ stage('Build artifact and Docker Image') {
 @[1-11](Init custom Groovy lib) 
 @[13-22](Define build type) 
 @[24-40](Mavenick)
+
+---
+
++++?image=assets/img/geek.gif @title[Burn After Reading]
+
+@snap[north-east text-white span-25] @quote[It's what I do that defines me.](Bruce Wayne) @snapend
+
+@snap[east span-45]
+@ul[spaced]
+@img[shadow](assets/img/jenkins_pipeline_ui.png)
+@img[shadow](assets/img/jenkins_pipeline_ui.png)
+@ulend
+@snapend
