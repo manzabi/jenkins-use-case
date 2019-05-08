@@ -1,4 +1,4 @@
-## Deploy a SpringBoot app to GKE using Jenkins
+## Deploy a SpringBoot app to GKE using Jenkins Pipelines
 ---
 @title[Tech Stack Description]
 
@@ -50,10 +50,10 @@
 
 @snap[east span-45]
 @ul[spaced]
-- Login with GMail SSO
-- Slack integration
-- Shared Global Library
-- Pipeline As Code
+- Push Code
+- SCM Checkout & Build
+- Push Docker Image
+- Apply image to K8S object
 @ulend
 @snapend
 
