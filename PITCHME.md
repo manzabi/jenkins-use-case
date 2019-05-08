@@ -91,9 +91,29 @@ stage('Initializing Fluttr Global Library') {
 
 if (env.BRANCH_NAME == "deploy") {
     configMap = deployMap
-} 
+}
+
+stage('Build artifact and Docker Image') {
+            steps {
+                script {
+                    slackSend(color: '#BDFFC3', channel: notificationChannel, message: "- Building artifact and Docker Image")
+                    try{
+                        if (currentBuild.result == null || currentBuild.result == 'SUCCESS') {
+                            sh "mvn -Dmaven.test.skip=true -DbuildTimestamp=${buildTimestamp} -Ddockerfile-image-repository-url=${gcrURL} -Dspring.profile.active="+configMap['tag']+" -Dbizaround.env="+configMap['tag']+" clean package"
+                        } else {
+                            error "Release is not possible. as build is not successful"
+                        }
+                    } catch (e) {
+                            currentBuild.result = 'FAILURE'
+                            throw e
+                    }
+                }
+            }
+}
+
+
 ```
 
-@[2,4](You can present code inlined within your slide markdown too.) 
-@[7-11](Your code is displayed using code-syntax highlighting just like your IDE.) 
-@[6-7](Again, all of this without ever leaving your slideshow.)
+@[1-3, 13-20](Init custom Groovy lib) 
+@[22-24](Define build type) 
+@[26-44](Mavenick)
