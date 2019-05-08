@@ -57,6 +57,6 @@
 @ulend
 @snapend
 
-@snap[west span-55]
+@snap[west span-45]
 @img[shadow](assets/img/overview.png)
 @snapend
