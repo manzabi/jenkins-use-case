@@ -115,13 +115,15 @@ stage('Build artifact and Docker Image') {
 @[24-40](Mavenick)
 
 ---
-
-+++?image=assets/img/geek.gif
 @title[Burn After Reading]
 
-@snap[north-east span-25] @quote[It's what I do that defines me.](Bruce Wayne) @snapend
++++?image=assets/img/geek.gif
 
-@snap[south-west span-45]
+@snap[north-east span-55]
+@quote[It's what I do that defines me.](Bruce Wayne) 
+@snapend
+
+@snap[west span-45]
 @ul[spaced]
 @img[shadow](assets/img/jenkins_pipeline_ui.png)
 @ulend
