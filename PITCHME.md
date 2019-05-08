@@ -66,19 +66,11 @@
 
 @snap[north-east template-note] The Jenkinsfile. @snapend
 
-+++?color=lavender @title[Fenced Code Block]
++++?color=lavender 
 
-```javascript
-// import
+```groovy
 @Library("fltrJenkinsLib")
 import com.fluttr.fltrJenkinsGlobalLib
-import groovy.transform.Field
-
-@Field static deployMap = [
-    tag: 'qas',
-    gkeClusterCredentials: 'gcloud container clusters get-credentials fltr-qas-kube --zone europe-west4-a --project qa-env-225712',
-    deploymentName: 'controlroom'
-]
 
 stage('Initializing Fluttr Global Library') {
     steps {
@@ -88,6 +80,12 @@ stage('Initializing Fluttr Global Library') {
         }
     }
 }
+
+@Field static deployMap = [
+    tag: 'qas',
+    gkeClusterCredentials: 'gcloud container clusters get-credentials fltr-qas-kube --zone europe-west4-a --project qa-env-225712',
+    deploymentName: 'controlroom'
+]
 
 if (env.BRANCH_NAME == "deploy") {
     configMap = deployMap
@@ -110,10 +108,8 @@ stage('Build artifact and Docker Image') {
                 }
             }
 }
-
-
 ```
 
-@[1-3, 13-20](Init custom Groovy lib) 
-@[22-24](Define build type) 
-@[26-44](Mavenick)
+@[1-11](Init custom Groovy lib) 
+@[13-22](Define build type) 
+@[24-40](Mavenick)
