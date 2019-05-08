@@ -64,7 +64,7 @@
 ---
 @title[Into The Jenkinsfile]
 
-@snap[north-east template-note] The Jenkinsfile. @snapend
+### @color[black](Into The Jenkinsfile)
 
 +++?color=lavender 
 
