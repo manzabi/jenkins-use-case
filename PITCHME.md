@@ -74,13 +74,26 @@
 import com.fluttr.fltrJenkinsGlobalLib
 import groovy.transform.Field
 
-@Field static masterMap = [
-    tag: 'stg',
-    gkeClusterCredentials: 'gcloud container clusters get-credentials fltr-stg-kube --zone europe-west4-a --project stg-env-228711',
+@Field static deployMap = [
+    tag: 'qas',
+    gkeClusterCredentials: 'gcloud container clusters get-credentials fltr-qas-kube --zone europe-west4-a --project qa-env-225712',
     deploymentName: 'controlroom'
 ]
+
+stage('Initializing Fluttr Global Library') {
+    steps {
+        script {
+            fltr = new fltrJenkinsGlobalLib()
+            buildTimestamp = fltr.buildTimestamp()
+        }
+    }
+}
+
+if (env.BRANCH_NAME == "deploy") {
+    configMap = deployMap
+} 
 ```
 
-@[1,2](You can present code inlined within your slide markdown too.) 
-@[3-5](Your code is displayed using code-syntax highlighting just like your IDE.) 
+@[2,4](You can present code inlined within your slide markdown too.) 
+@[7-11](Your code is displayed using code-syntax highlighting just like your IDE.) 
 @[6-7](Again, all of this without ever leaving your slideshow.)
